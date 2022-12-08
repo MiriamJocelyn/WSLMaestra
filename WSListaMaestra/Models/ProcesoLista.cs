@@ -103,11 +103,11 @@ namespace WSListaMaestra.Models
 				string difusion = json.difusion;
 
 				SqlParameter[] param = new SqlParameter[5];
-				param[0] = new SqlParameter("@estatus", SqlDbType.VarChar);
-				param[1] = new SqlParameter("@nivel", SqlDbType.Int);
-				param[2] = new SqlParameter("@area", SqlDbType.VarChar);
-				param[3] = new SqlParameter("@area", SqlDbType.VarChar);
-				param[4] = new SqlParameter("@area", SqlDbType.VarChar);
+				param[0] = new SqlParameter("@codigo", SqlDbType.VarChar);
+				param[1] = new SqlParameter("@elaboracion", SqlDbType.VarChar);
+				param[2] = new SqlParameter("@revision", SqlDbType.VarChar);
+				param[3] = new SqlParameter("@aprobados", SqlDbType.VarChar);
+				param[4] = new SqlParameter("@difusion", SqlDbType.VarChar);
 				param[0].Value = codigo;
 				param[1].Value = elaboracion;
 				param[2].Value = revision;

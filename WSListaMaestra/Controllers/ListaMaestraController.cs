@@ -40,7 +40,13 @@ namespace WSListaMaestra.Controllers
 			return lista.ConsultaLista(Doc);
 		}
 
-
-	}
+        [HttpPost]
+        [Route("ListaM/EdicionLista")]
+        public List<UpdateLista> EdicionLista(JsonUpdate Doc)
+        {
+            ProcesoLista lista = new ProcesoLista();
+            return lista.Update(Doc);
+        }
+    }
 
 }
